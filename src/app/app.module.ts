@@ -4,10 +4,11 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SidebarDirective } from './sidebar.directive';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent,  SidebarDirective ],
+  declarations: [ AppComponent,  SidebarDirective, NavbarComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
