@@ -1,5 +1,13 @@
 <div class="form-group">
   <input type="text" class="form-control" id="search"
-    placeholder="search here. . . " (focus)="showModal()" >
+    placeholder="Search here. . . " (focus)="showModal()" >
+  <!-- <app-checkbox
+    [checkboxId]="checkboxData"
+    [checkboxName]="checkboxData"
+    [checkboxLabel]="checkboxData"
+    [checkboxValue]="checkboxData"
+    ></app-checkbox> -->
 </div>
-<app-modal *ngIf="showIt" (close)="hideModal($event)"></app-modal>
+<app-modal *ngIf="showIt"
+          [modalTitle]="modalTitle"
+          (close)="hideModal($event)"></app-modal>

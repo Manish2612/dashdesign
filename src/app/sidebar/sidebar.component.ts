@@ -10,7 +10,7 @@ export class SidebarComponent implements OnInit {
   constructor() { }
   showIt = false;
   @HostBinding('class') classes = 'col col-xl-2 col-lg-3';
-
+  modalTitle="Search"
   ngOnInit() {
   }
 

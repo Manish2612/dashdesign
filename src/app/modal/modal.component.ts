@@ -10,6 +10,10 @@ export class ModalComponent implements OnInit {
   constructor() { }
   @Output() close = new EventEmitter<string>();
 
+  @Input() modalTitle:string = "";
+
+  checkboxData = "Andheri"
+
   ngOnInit() {
   }
 

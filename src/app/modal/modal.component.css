@@ -22,9 +22,11 @@
     width: 800px;
     height: 600px;
 }
-
+.dashmodal .title{
+  font-weight: bold;
+}
 .dashmodal .title,.dashmodal .content,.dashmodal .footer{
-  padding: 10px;
+  padding: 15px;
   border-bottom: 1px solid #ccc;
 }
 .dashmodal .content{
