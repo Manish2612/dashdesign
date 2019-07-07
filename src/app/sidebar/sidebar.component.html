@@ -1,0 +1,5 @@
+<div class="form-group">
+  <input type="text" class="form-control" id="search"
+    placeholder="search here. . . " (focus)="showModal()" >
+</div>
+<app-modal *ngIf="showIt" (close)="hideModal($event)"></app-modal>
