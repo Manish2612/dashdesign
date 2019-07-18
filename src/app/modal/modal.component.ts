@@ -11,6 +11,7 @@ export class ModalComponent implements OnInit {
   @Output() close = new EventEmitter<string>();
 
   @Input() modalTitle:string = "";
+  @Input() modalData = [];
 
   checkboxData = "Andheri"
 
@@ -18,7 +19,7 @@ export class ModalComponent implements OnInit {
   }
 
   showModal() {
-        this.close.emit();
+        //this.close.emit();
   }
 
   hideModal() {

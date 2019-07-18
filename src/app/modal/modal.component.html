@@ -11,16 +11,16 @@
         </div>
       </div>
       <div class="row" style="padding-top:15px">
-        <div class="col col-lg-3">
+        <div class="col col-lg-3"  *ngFor="let item of modalData">
           <div style="font-weight:bold;color:#d84e55;margin-bottom:8px">
-            A
+            {{item.group}}
           </div>
-          <div>
+          <div *ngFor="let itemValue of item.data ">
             <app-checkbox
-              [checkboxId]="checkboxData"
-              [checkboxName]="checkboxData"
-              [checkboxLabel]="checkboxData"
-              [checkboxValue]="checkboxData"
+              [checkboxId]="itemValue"
+              [checkboxName]="itemValue"
+              [checkboxLabel]="itemValue"
+              [checkboxValue]="itemValue"
               ></app-checkbox>
           </div>
         </div>
